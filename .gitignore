@@ -1,0 +1,50 @@
+# Ignore composer dependencies
+vendor/
+
+# Ignore logs and other runtime-generated files
+*.log
+*.error
+*.error_log
+*.sum
+*.map
+
+# Ignore any backup files
+*~
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore environment-specific files
+.env
+
+# Ignore user-specific files
+*.cache
+*.session
+
+# Ignore PHP error files
+error_log
+
+# Ignore Visual Studio Code settings
+.vscode
+
+# Ignore PHP Composer files
+/composer.phar
+
+# Ignore PHP Composer installation
+/composer.lock
+
+# Ignore node modules
+/node_modules/
+
+# Ignore npm debug log
+/npm-debug.log
+
+# Ignore OS generated files
+*.DS_Store
+
+# Ignore Node logs
+*.log
+
+# Ignore NPM package manager
+package-lock.json
