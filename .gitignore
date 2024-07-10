@@ -1,3 +1,8 @@
+# Ignore Database files
+*.db
+*.sqlite
+*.sqlite3
+
 # Ignore composer dependencies
 vendor/
 
