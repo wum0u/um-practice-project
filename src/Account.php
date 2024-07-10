@@ -2,16 +2,39 @@
 
 class Account
 {
-  private $pdo;
+  private $id;
+  private $username;
+  private $password;
 
-  public function __construct(PDO $pdo)
+  public function __construct($id, $username, $password)
   {
-    $this->pdo = $pdo;
+    $this->id = $id;
+    $this->username = $username;
+    $this->password = $password;
   }
 
-  public function readAll()
+  public function getId()
   {
-    $stmt = $this->pdo->query("SELECT * FROM members");
-    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    return $this->id;
+  }
+
+  public function getUsername()
+  {
+    return $this->username;
+  }
+
+  public function getPassword()
+  {
+    return $this->password;
+  }
+
+  public function setUsername($username)
+  {
+    $this->username = $username;
+  }
+
+  public function setPassword($password)
+  {
+    $this->password = $password;
   }
 }
